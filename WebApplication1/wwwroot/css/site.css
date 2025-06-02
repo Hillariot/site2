@@ -185,3 +185,102 @@ footer {
 
 
 
+@media (max-width: 768px) {
+    .logo-bar h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .nav-menu li {
+            margin: 10px 0;
+        }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .info-columns {
+        flex-direction: column;
+    }
+
+    .card, .info-block {
+        flex: 1 1 100%;
+    }
+
+    .hero {
+        height: auto;
+    }
+
+    .stats-overlay {
+        position: static;
+        margin-top: 20px;
+        max-width: 100%;
+        box-shadow: none;
+        backdrop-filter: none;
+    }
+
+    .content {
+        padding: 20px 10px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        footer .nav-menu li {
+            margin: 10px 0;
+        }
+}
+/* Контейнер для навигации */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Кнопка-бургер */
+.burger {
+    display: none;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Скрываем меню на мобилке */
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transition: all 0.3s ease;
+        background-color: #111;
+    }
+
+        .nav-menu li {
+            margin: 10px 0;
+        }
+
+        .nav-menu.show {
+            display: flex;
+        }
+
+}

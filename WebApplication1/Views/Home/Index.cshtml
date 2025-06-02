@@ -15,12 +15,18 @@
             <h1><span class="orange">I'</span>SKRAS</h1>
         </div>
         <nav>
-            <ul class="nav-menu">
-                <li><a href="/Home/Index">О НАС</a></li>
-                <li><a href="/Home/Geography">ГЕОГРАФИЯ ВЫПУСКНИКОВ</a></li>
-                <li><a href="/Home/Pressa">ПРЕССА О НАС</a></li>
-            </ul>
+            <div class="nav-container">
+                <button class="burger" id="burger">
+                    &#9776; <!-- Иконка "три полоски" -->
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="/Home/Index">О НАС</a></li>
+                    <li><a href="/Home/Geography">ГЕОГРАФИЯ ВЫПУСКНИКОВ</a></li>
+                    <li><a href="/Home/Pressa">ПРЕССА О НАС</a></li>
+                </ul>
+            </div>
         </nav>
+
 
     </header>
 
@@ -77,12 +83,18 @@
     </main>
 
     <footer>
-        <ul class="nav-menu">
-            <li><a href="/Home/Index">О НАС</a></li>
-            <li><a href="/Home/Geography">ГЕОГРАФИЯ ВЫПУСКНИКОВ</a></li>
-            <li><a href="/Home/Pressa">ПРЕССА О НАС</a></li>
-        </ul>
         <p>I'SKRAS © @DateTime.Now.Year</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const burger = document.getElementById('burger');
+          const navMenu = document.getElementById('nav-menu');
+
+          burger.addEventListener('click', function () {
+            navMenu.classList.toggle('show');
+          });
+        });
+    </script>
+
 </body>
 </html>
