@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "I'SKRAS";
+}
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="page-title">География выпускников</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <div class="logo-bar">
+            <h1><span class="orange">I'</span>SKRAS</h1>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="/Home/Index">О НАС</a></li>
+                <li><a href="/Home/Geography">ГЕОГРАФИЯ ВЫПУСКНИКОВ</a></li>
+                <li><a href="/Home/Pressa">ПРЕССА О НАС</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="hero">
+        <h1 class="hero-title">География наших выпускников</h1>
+
+        <div class="map-background">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=127O8JpEDTKgO13BNTIdYvavH5McqJnU&ehbc=2E312F&noprof=1"
+                    width="100%"
+                    height="600"
+                    style="border:0; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"
+                    allowfullscreen
+                    loading="lazy">
+            </iframe>
+
+            <!-- Окошко статистики -->
+            <section class="stats-overlay">
+                <div class="stat-item">
+                    <h2>450+</h2>
+                    <p>Счастливых владельцев по всему миру</p>
+                </div>
+                <div class="stat-item">
+                    <h2>15 лет</h2>
+                    <p>Опыт разведения породы</p>
+                </div>
+                <div class="stat-item">
+                    <h2>Воспитано</h2>
+                    <p>Чемпионов: xx</p>
+                    <p>Гранд чемпионов: xx</p>
+                </div>
+                <div class="stat-item">
+                    <h2>Система CFA:</h2>
+                    <p>Американская</p>
+                </div>
+                <div class="stat-item">
+                    <h2>28 стран</h2>
+                    <p>География наших выпускников</p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <footer>
+        <p>I'SKRAS © @DateTime.Now.Year</p>
+    </footer>
+</body>
+</html>

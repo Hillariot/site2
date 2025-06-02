@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "I'SKRAS";
+}
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кошки</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <div class="logo-bar">
+            <h1><span class="orange">I'</span>SKRAS</h1>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="/Home/Index">О НАС</a></li>
+                <li><a href="/Home/Geography">ГЕОГРАФИЯ ВЫПУСКНИКОВ</a></li>
+                <li><a href="/Home/Pressa">ПРЕССА О НАС</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="hero">
+        <img src="/images/Zlata Dita.jpg" alt="Главный кот" style="width: 100%; height: auto;" />
+    </section>
+
+    <main class="content">
+        <div class="cards">
+            <div class="card">
+                <img src="/images/IMG_0367.jpg" alt="Кот" style="width: 100%; height: auto;" />
+                <h3>УЗНАЙТЕ ВСЁ <span class="orange">О СВОЁМ КОТЕ</span></h3>
+                <p>Мы расскажем о характере, привычках и особенностях породы, чтобы вы лучше понимали своего питомца.</p>
+                <a class="btn" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="card">
+                <img src="/images/Oddy.jpg" alt="Кот" style="width: 100%; height: auto;" />
+                <h3>НЕВОЗМОЖНО <span class="orange">НЕ ВЛЮБИТЬСЯ</span></h3>
+                <p>Наши кошки обладают уникальной внешностью и темпераментом, который покоряет с первого взгляда.</p>
+                <a class="btn" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="card">
+                <img src="/images/1.jpg" alt="Кот" style="width: 100%; height: auto;" />
+                <h3>НАЙДИТЕ СЕБЕ <span class="orange">ЛУЧШЕГО ДРУГА</span></h3>
+                <p>Каждый наш выпускник — это верный спутник и настоящий член семьи.</p>
+                <a class="btn" href="#">ПОДРОБНЕЕ</a>
+            </div>
+        </div>
+
+        <div class="info-columns">
+            <div class="info-block">
+                <h3>О НАС</h3>
+                <p><span class="orange">I'SKRAS</span> — это питомник, посвятивший себя разведению элитных кошек с любовью и заботой.</p>
+                <a class="btn" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="info-block">
+                <h3>НАШИ СОБЫТИЯ</h3>
+                <p><span class="orange">Выставка в Москве</span> — наши питомцы получили высшие награды и титулы.</p>
+                <p>Победы на международных шоу в Европе и США.</p>
+                <p>Участие в благотворительных акциях и фелинологических форумах.</p>
+                <a class="btn" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="info-block">
+                <h3>ПОСЛЕДНИЕ НОВОСТИ</h3>
+                <div class="news-item">
+                    <p><span class="orange">11.11.1111</span><br>Наш выпускник стал победителем CFA-шоу в США!</p>
+                </div>
+                <div class="news-item">
+                    <p><span class="orange">11.11.1111</span><br>Новый помёт котят доступен для резервации.</p>
+                </div>
+                <a class="btn" href="#">ВСЕ НОВОСТИ</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul class="nav-menu">
+            <li><a href="/Home/Index">О НАС</a></li>
+            <li><a href="/Home/Geography">ГЕОГРАФИЯ ВЫПУСКНИКОВ</a></li>
+            <li><a href="/Home/Pressa">ПРЕССА О НАС</a></li>
+        </ul>
+        <p>I'SKRAS © @DateTime.Now.Year</p>
+    </footer>
+</body>
+</html>

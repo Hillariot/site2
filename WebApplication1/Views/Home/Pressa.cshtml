@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "I'SKRAS";
+}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="page-title">Пресса о нас</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <div class="logo-bar">
+            <h1><span class="orange">I'</span>SKRAS</h1>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="/Home/Index">О НАС</a></li>
+                <li><a href="/Home/Geography">ГЕОГРАФИЯ ВЫПУСКНИКОВ</a></li>
+                <li><a href="/Home/Pressa">ПРЕССА О НАС</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Заголовок секции -->
+    <section class="hero">
+        <h1>Пресса о нас</h1>
+    </section>
+
+    <!-- Статьи из прессы -->
+    <div class="cards">
+        <div class="card">
+            <img src="/images/my-book_MoiDrugKoshka1.jpg" alt="Статья 1" style="width: 100%; height: auto;" />
+            <h3>МЫ В ЖУРНАЛЕ <span class="orange">«МОЙ ДРУГ КОШКА»</span></h3>
+            <p>Нас отметили за ответственное разведение и любовь к породе. Прочитайте, как мы добились признания.</p>
+            <a class="btn" href="#">ЧИТАТЬ</a>
+        </div>
+        <div class="card">
+            <img src="/images/11.jpg" alt="Статья 2" style="width: 100%; height: auto;" />
+            <h3>ИНТЕРВЬЮ С НАМИ <span class="orange">В "ДРУГ КОШЕК"</span></h3>
+            <p>История питомника, ценности и подход к воспитанию котят — в большом интервью с основателем.</p>
+            <a class="btn" href="#">ЧИТАТЬ</a>
+        </div>
+        <div class="card">
+            <img src="/images/myfriend2-001_.jpg" alt="Статья 3" style="width: 100%; height: auto;" />
+            <h3><span class="orange">МОЙ ДРУГ КОШКА</span>: ЛУЧШИЕ КОШКИ ГОДА</h3>
+            <p>Онлайн-портал "Мой друг кошка" включил наших питомцев в ТОП лучших представителей породы в Европе.</p>
+            <a class="btn" href="#">ЧИТАТЬ</a>
+        </div>
+    </div>
+
+
+    <!-- Подвал -->
+    <footer>
+        <ul class="nav-menu">
+            <li><a href="/Home/Index">О НАС</a></li>
+            <li><a href="/Home/Geography">ГЕОГРАФИЯ ВЫПУСКНИКОВ</a></li>
+            <li><a href="/Home/Pressa">ПРЕССА О НАС</a></li>
+        </ul>
+        <p>I'SKRAS © @DateTime.Now.Year</p>
+    </footer>
+
+</body>
+</html>
